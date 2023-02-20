@@ -11,19 +11,19 @@ const Main = () => {
             <div 
                 className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center"
             >
-                <img 
+                {/* <img 
                     src='/assets/cover04.jpg' 
                     className="fixed w-fit h-fit md:max-h-full opacity-10 relative bg-fixed bg-center bg-cover bg-no-repeat bg-[ url(/assets/cover04.jpg)]"
                     alt='/'
-                />
+                /> */}
                 <div 
-                className="absolute w-screen h-screen top-16"
+                // className="absolute w-screen h-screen top-16"
                 >
                     {/* <p className="uppercase text-sm tracking-widest text-gray-500">
                         Hi, I'm{' '}
                     </p> */}
                     <h1 className="py-4 text-gray-700 underline decoration-double decoration-slate-300">
-                        I'm <span className="text-[#5651e5]">{FULL_NAME}</span>
+                        I am <span className="text-[#5651e5]">{FULL_NAME}</span>
                     </h1>
                     <h1 className="py-4 text-gray-700">A {JOB_TITLE}</h1>
                     <p className="py-4 text-gray-600 max-w-[70%] m-auto">
