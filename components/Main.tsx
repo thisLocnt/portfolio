@@ -11,11 +11,7 @@ const Main = () => {
             <div 
                 className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center"
             >
-                {/* <img 
-                    src='/assets/cover04.jpg' 
-                    className="fixed w-fit h-fit md:max-h-full opacity-10 relative bg-fixed bg-center bg-cover bg-no-repeat bg-[ url(/assets/cover04.jpg)]"
-                    alt='/'
-                /> */}
+            
                 <div 
                 // className="absolute w-screen h-screen top-16"
                 >
