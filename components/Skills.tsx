@@ -13,7 +13,7 @@ const Skill = () => {
                 {
                     SKILLS.map((skill, index) => (
                         <div 
-                            className='w-[100%] min-[320px]:w-[100%] lg:w-[22%] md:w-[30%] sm:w-[48%]  p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 cursor-pointer' 
+                            className='w-[100%] min-[320px]:w-[100%] lg:w-[22%] md:w-[30%] sm:w-[48%] p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 cursor-pointer bg-sky-50' 
                             key={index}
                         >
                             <div className='grid grid-cols-2 gap-4 justify-center items-center'>

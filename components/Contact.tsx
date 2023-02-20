@@ -4,7 +4,7 @@ import React from 'react'
 import { AiOutlineMail } from 'react-icons/ai'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
-import { JOB_TITLE } from '../interfaces/constants'
+import { JOB_TITLE, FULL_NAME } from '../interfaces/constants'
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 const Contact = () => {
   return (
@@ -28,18 +28,18 @@ const Contact = () => {
                             />
                         </div>
                     <div>
-                        <h2 className='py-2'>Nguyen Tien Loc</h2>
+                        <h2 className='py-2'>{FULL_NAME}</h2>
                         <p>{JOB_TITLE}</p>
                         <p className='py-4'>
-                            I am available for full-time positions. 
-                            Contact me.
+                            I am seeking full-time positions and am excited about the prospect of collaborating with you
+                            {/* Contact me. */}
                         </p>
                     </div>
                     <div>
                         <p className='uppercase pt-8'>Connect With Me</p>
                         <div className='flex items-center justify-between py-4'>
                             <a
-                                href=''
+                                href='https://www.linkedin.com/in/ngtienloc1401/'
                                 target='_blank'
                                 rel='noreferrer'
                             >
@@ -48,7 +48,7 @@ const Contact = () => {
                                 </div>
                             </a>
                             <a
-                                href=''
+                                href='https://github.com/LOCNg0114'
                                 target='_blank'
                                 rel='noreferrer'
                             >
@@ -109,10 +109,8 @@ const Contact = () => {
                 <Link href='/'>
                     <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
                         <HiOutlineChevronDoubleUp className='text-[#5651e5]' size={30} />
-
                     </div>
                 </Link>
-
             </div>
         </div>
     </div>

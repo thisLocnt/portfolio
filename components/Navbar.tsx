@@ -68,7 +68,7 @@ const Navbar = () =>{
                         </div>
                         <div className="border-b border-gray-300 my-4">
                             <p className="w-[85%] md:w-[90%] py-4">
-                                It is Coding Time!!!
+                                Thank you for taking the time to read about me and my experience.
                             </p>
                         </div>
                     </div>
@@ -94,10 +94,22 @@ const Navbar = () =>{
                             <p className="uppercase tracking-widest text-[#5651e5]">Sample Text</p>
                             <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                                    <FaLinkedinIn size={25} />
+                                    <a
+                                        href='https://www.linkedin.com/in/ngtienloc1401/'
+                                        target='_blank'
+                                        rel='noreferrer'
+                                    >
+                                        <FaLinkedinIn size={25} />
+                                    </a>
                                 </div>
                                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                                    <FaGithub size={25} />
+                                    <a
+                                        href='https://github.com/LOCNg0114'
+                                        target='_blank'
+                                        rel='noreferrer'
+                                    >
+                                        <FaGithub size={25} />
+                                    </a>
                                 </div>
                                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                                     <AiOutlineMail size={25} />
@@ -110,7 +122,6 @@ const Navbar = () =>{
                     </div>
                 </div>
             </div>
-
         </div>
     )
 }

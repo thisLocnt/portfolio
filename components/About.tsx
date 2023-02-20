@@ -1,6 +1,7 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
-
+import { FULL_NAME, SELF_INTRODUCE } from '../interfaces/constants'
 const About = () => {
   return (
     <div id='about'>
@@ -9,20 +10,21 @@ const About = () => {
                 <div className='col-span-2'>
                     <p className='uppercase text-xl tracking-widest text-[#5651e5]'>About</p>
                     <h2 className='py-4'>Who I Am</h2>
-                    <p className='py-2 text-gray-600'>Pellentesque finibus, purus non ullamcorper rhoncus, 
-                        nibh eros pellentesque est, nec fermentum diam purus ut neque. 
-                        Proin quis massa ullamcorper, tempor nisl eu, auctor nisl.
-                        Fusce ac rutrum neque. Cras eget libero ut tellus ve
-                        hicula dignissim eget sed ante. 
+                    <p className='py-2 text-gray-600'>
+                        My full name is <span className='text-[#FF3399] font-bold'>{FULL_NAME}</span>. 
+                        I am a developer.
                     </p>
                     <p className='py-2 text-gray-600'>
-                        Aenean ex ex, vehicula a facilisis eget, suscipit a eros. Quisque at sapien velit. 
-                        Vestibulum pharetra magna id enim sollicitudin hendrerit. In ac commodo nulla, quis dignissim ex
+                        {SELF_INTRODUCE}
                     </p>
-                    <p className='py-2 text-gray-600 underline cursor-pointer'>Check out some of my latest projects</p>
+                    <Link href='/#project'>
+                        <p className='py-2 text-gray-600 underline cursor-pointer'>
+                            Check out some of my latest projects
+                        </p>
+                    </Link>
                 </div>
             </div>
-            <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl items-center justify-center hover:scale-105 ease-in duration-300rection'>
+            <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl items-center justify-center hover:scale-105 ease-in duration-300'>
                 <Image className='rounded-xl' src='/assets/cover.jpg' alt='/' width='300' height='300'/>
             </div>                
         </div>

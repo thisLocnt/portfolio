@@ -1,8 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import { RiRadioButtonFill } from "react-icons/ri";
-import { Project, PROJECTS } from "../../../interfaces/constants";
-
+import { Project, PROJECTS, FULL_NAME } from "../../../interfaces/constants";
 interface PropertyProps {
     project: Project
 }
@@ -12,14 +11,14 @@ const Property = ({project}: PropertyProps) => {
         <>
             <div className="w-full mt-[6rem]">
                 <Head>
-                    <title>Nguyen Tien Loc | {project.projectName}</title>
+                    <title>{FULL_NAME} | {project.projectName}</title>
                     <meta name="author" content="Nguyen Tien Loc" />
                     <meta name="description" content="" />
                 </Head>
                 <div className="w-screen h-[30vh] relative">
                     <div className="absolute top-0 left-0 w-full h-[30vh]  bg-black/80 z-10 ">
                         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white">
-                            <h2 className="py-2 text-style-blue">{}</h2>
+                            <h2 className="py-2 text-style-blue">Project {project.projectName}</h2>
                             <h3 className="text-style-red">
                                 {project.mainTech.join(' - ')}
                             </h3>
@@ -28,19 +27,37 @@ const Property = ({project}: PropertyProps) => {
                 </div>
                 <div className="max-w-[1240px] mx-auto p-2 gap-x-2 flex flex-col md:flex-row items-center">
                     <div className="items-stretch w-[80%]">
-                        <p>Project {project.projectName}</p>
+                        {/* <p>Project {project.projectName}</p> */}
                         <h2>Overview</h2>
                         <p className="mb-4">{project.overview}</p>
-                            <button
-                                className={`px-8 py-2 mt-4 mr-8` } 
+                        {
+                            project.linkDemo ? ( 
+                            <a
+                                href={project.linkDemo}
+                                target='_blank'
+                                rel='noreferrer'
                             >
-                            Demo
-                            </button>
-                            <button
-                                className={`px-8 py-2 mt-4 `}                    
+                                <button className={`px-8 py-2 mt-4 mr-8` }>Demo</button>
+                            </a>
+                        ) : (
+                            <button className={`px-8 py-2 mt-4 mr-8 cursor-default`}>Demo</button>
+                            )
+                        }
+                        {
+                            project.linkRepo ? (
+                            <a
+                                href={project.linkRepo}
+                                target='_blank'
+                                rel='noreferrer'
                             >
-                            Code
-                        </button>
+                                <button className={`px-8 py-2 mt-4 `}>Code</button>
+                            </a>
+                            ) :
+                            (
+                                <button className={`px-8 py-2 mt-4 cursor-default`}>Code</button>
+                            )
+                        }
+
                     </div>
                     <div className='col-span-4 md:col-span-1 shadow-xl flex-1 shadow-gray-400 rounded-xl py-4'>
                         <div className='p-2'>
