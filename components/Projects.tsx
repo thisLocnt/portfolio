@@ -18,7 +18,7 @@ const Projects = () => {
                     <React.Fragment key={index}>
                         <div  className='flex flex-col mb-10 gap-x-3 sm:flex-row'>
                             <div className='flex-1'>
-                                <Image className='m-auto rounded-xl shadow-xl shadow-gray-400' src={project.thumbnail} alt='/' width='200' height='200' />
+                                <Image className='m-auto rounded-xl shadow-xl shadow-gray-400' src={project.thumbnail} alt='/' width='320' height='320' />
                             </div>
                             <div className='w-full sm:w-[70%]'>
                                 <h3 className='my-4 text-center sm:text-left sm:mt-0'>{project.projectName}</h3>
