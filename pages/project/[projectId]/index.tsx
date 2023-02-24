@@ -2,6 +2,7 @@ import Head from "next/head";
 import React from "react";
 import { RiRadioButtonFill } from "react-icons/ri";
 import { Project, PROJECTS, FULL_NAME } from "../../../interfaces/constants";
+
 interface PropertyProps {
     project: Project
 }
@@ -13,6 +14,7 @@ const Property = ({project}: PropertyProps) => {
                 <Head>
                     <title>{FULL_NAME} | {project.projectName}</title>
                     <meta name="author" content="Nguyen Tien Loc" />
+                    <meta property="og:title" content={`Nguyen Tien Loc | ${project.projectName}`} />
                     <meta name="description" content="" />
                 </Head>
                 <div className="w-screen h-[30vh] relative">
@@ -28,7 +30,7 @@ const Property = ({project}: PropertyProps) => {
                 <div className="max-w-[1240px] mx-auto p-2 gap-x-2 flex flex-col md:flex-row items-center">
                     <div className="items-stretch w-[80%]">
                         {/* <p>Project {project.projectName}</p> */}
-                        <h2>Overview</h2>
+                        <h2 className="whitespace-pre-line">Overview</h2>
                         <p className="mb-4">{project.overview}</p>
                         {
                             project.linkDemo ? ( 
@@ -37,7 +39,7 @@ const Property = ({project}: PropertyProps) => {
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                                <button className={`px-8 py-2 mt-4 mr-8` }>Demo</button>
+                                <button className={`px-8 py-2 mt-4 mr-8 ` }>Demo</button>
                             </a>
                         ) : (
                             <button className={`px-8 py-2 mt-4 mr-8 cursor-default`}>Demo</button>
@@ -62,13 +64,22 @@ const Property = ({project}: PropertyProps) => {
                     <div className='col-span-4 md:col-span-1 shadow-xl flex-1 shadow-gray-400 rounded-xl py-4'>
                         <div className='p-2'>
                             <p className='text-center font-bold pb-2'>Technologies</p>
-                            <div className='grid grid-cols-3 md:grid-cols-1'>
+                            {/* <div className='grid grid-cols-3 md:grid-cols-1'>
                                 {project.technologies.map((tech, tIndex) => (
                                     <p key={tIndex} className='text-gray-600 py-2 flex items-center'>
                                         <RiRadioButtonFill className='pr-1' /> {tech}
                                     </p>
 
                                 ))}
+                            </div> */}
+                            <div className='flex flex-wrap gap-x-4 justify-center'>
+                                {
+                                    project.technologies.map((tech, index) => (
+                                        <p key={index} className='text-gray-600 py-2 flex items-center text-lg'>
+                                            <RiRadioButtonFill color={index % 2 ? '#FF3399' : '#0099FF'} className='pr-1' /> {tech}
+                                        </p>
+                                    ))
+                                }
                             </div>
                         </div>
                     </div>
