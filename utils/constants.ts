@@ -35,6 +35,11 @@ export const SKILLS: Skill[] = [
     },
 ]
 
+interface ExperienceObject{
+    name: string;
+    content: string;
+}
+
 export interface Project {
     projectId: number;
     projectName: string;
@@ -44,7 +49,9 @@ export interface Project {
     technologies: string[];
     linkDemo: string;
     linkRepo: string;
-    
+    experience: string;
+    experienceObject: ExperienceObject[];
+    showDescription?: string
 }
 
 export const PROJECTS: Project[] = [
@@ -57,6 +64,9 @@ export const PROJECTS: Project[] = [
         technologies: ['ReactJS', 'Redux toolkit', 'Material UI', 'SwiperJS', 'Formik', 'Yup', 'Express rest api', 'Express validator ', 'JWT' ],
         linkDemo: '',
         linkRepo: 'https://github.com/LOCNg0114/MERN_Movie_Web_2023',
+        experience: 'Evaluating front-end technologies (libraries, dependencies). this improves the performance of the application during use. Reviewing Code & support teammate during work. it makes the code cleaner and conforms to the convention. Working directly with the Product Owner and Design Team to define the product roadmap.',
+        experienceObject: [],
+        showDescription: 'Short description for Movie Website'
     },
     {
         projectId: 2,
@@ -67,16 +77,22 @@ export const PROJECTS: Project[] = [
         technologies: ['NextJS', 'TypeScript','Tailwind CSS', 'SWR', 'SwiperJS', 'Axios'],
         linkDemo: 'https://nextjs-blog-app-keuc.vercel.app',
         linkRepo: 'https://github.com/LOCNg0114/Nextjs-Blog-App',
+        experience:'',
+        experienceObject: [],
+        showDescription: 'Short description for Blog App'
     },
     {
         projectId: 3,
         projectName: 'Netflix Clone',
         thumbnail: '/assets/projects/netfilix-clone.JPG',
-        mainTech: ['Next.js', 'TypeScript', 'TailwindCSS', 'Material UI'],
+        mainTech: ['Next.js', 'TypeScript', 'TailwindCSS', 'Material UI', 'Firebase'],
         overview: 'This is a NETFLIX Clone that specializes in Server Side Rendering using Next.js, creating responsive user interfaces through the use of Tailwind CSS, and incorporating Typescript.',
-        technologies: ['Next.js', 'TypeScript', 'TailwindCSS', 'Material UI', 'React Player'],
+        technologies: ['Next.js', 'TypeScript', 'TailwindCSS', 'Material UI', 'React Player', 'NextAuth', 'Firebase'],
         linkDemo: 'https://netflix-clone-locng0114.vercel.app/',
         linkRepo: 'https://github.com/LOCNg0114/netflix-clone',
+        experience:'',
+        experienceObject: [],
+        showDescription:'Short description for Netflix Website Clone'
     },
     {
         projectId: 4,
@@ -87,5 +103,8 @@ export const PROJECTS: Project[] = [
         technologies: ['ReactJS', 'Express', 'Nodemailer', 'Nodemon'],
         linkDemo: '',
         linkRepo: 'https://github.com/LOCNg0114/Nodemailer_Gmail',
+        experience:'',
+        experienceObject: [],
+        showDescription: 'Short description for Nodemailer Email'
     },
 ]

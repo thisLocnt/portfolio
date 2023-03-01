@@ -1,7 +1,7 @@
 
 import Image from 'next/image'
 import React from 'react'
-import { SKILLS } from '../interfaces/constants'
+import { SKILLS } from '../utils/constants'
 
 const Skill = () => {
     return (

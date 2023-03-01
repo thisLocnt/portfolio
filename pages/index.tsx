@@ -4,7 +4,7 @@ import Contact from '../components/Contact'
 import Main from '../components/Main'
 import Projects from '../components/Projects'
 import Skill from '../components/Skills'
-import { JOB_TITLE } from '../interfaces/constants'
+import { JOB_TITLE } from '../utils/constants'
 
 export default function Home() {
   return (

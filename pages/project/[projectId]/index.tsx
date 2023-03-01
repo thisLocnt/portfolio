@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import { RiRadioButtonFill } from "react-icons/ri";
-import { Project, PROJECTS, FULL_NAME } from "../../../interfaces/constants";
+import { Project, PROJECTS, FULL_NAME } from "../../../utils/constants";
 
 interface PropertyProps {
     project: Project
@@ -15,7 +15,9 @@ const Property = ({project}: PropertyProps) => {
                     <title>{FULL_NAME} | {project.projectName}</title>
                     <meta name="author" content="Nguyen Tien Loc" />
                     <meta property="og:title" content={`Nguyen Tien Loc | ${project.projectName}`} />
-                    <meta name="description" content="" />
+                    <meta property="og:description" content={project.showDescription} />
+                    <meta property="og:url" content={`${process.env.ROOT_URL}/project/${project.projectId}`} />
+                    <meta property='og:image' content={`${process.env.ROOT_URL}${project.thumbnail}`} />
                 </Head>
                 <div className="w-screen h-[30vh] relative">
                     <div className="absolute top-0 left-0 w-full h-[30vh]  bg-black/80 z-10 ">

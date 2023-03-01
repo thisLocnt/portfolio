@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { FULL_NAME, SELF_INTRODUCE } from '../interfaces/constants'
+import { FULL_NAME, SELF_INTRODUCE } from '../utils/constants'
 const About = () => {
   return (
     <div id='about'>

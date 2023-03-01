@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { AiFillCheckCircle } from 'react-icons/ai'
-import { PROJECTS } from '../interfaces/constants'
+import { PROJECTS } from '../utils/constants'
 import Link from 'next/link';
 
 const Projects = () => {
