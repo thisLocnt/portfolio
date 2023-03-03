@@ -6,6 +6,7 @@ import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { JOB_TITLE, FULL_NAME } from '../utils/constants'
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
+import { Tooltip } from '@material-tailwind/react'
 const Contact = () => {
   return (
     <div id='contact' className='w-full lg:h-screen'>
@@ -32,34 +33,39 @@ const Contact = () => {
                         <p>{JOB_TITLE}</p>
                         <p className='py-4'>
                             I am seeking full-time positions and am excited about the prospect of collaborating with you
-                            {/* Contact me. */}
                         </p>
                     </div>
                     <div>
                         <p className='uppercase pt-8'>Connect With Me</p>
                         <div className='flex items-center justify-between py-4'>
-                            <a
-                                href='https://www.linkedin.com/in/ngtienloc1401/'
-                                target='_blank'
-                                rel='noreferrer'
-                            >
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                                <FaLinkedinIn />
-                                </div>
-                            </a>
-                            <a
-                                href='https://github.com/LOCNg0114'
-                                target='_blank'
-                                rel='noreferrer'
-                            >
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                                <FaGithub />
-                                </div>
-                            </a>
-
+                            <Tooltip content="LinkedIn" placement="bottom" className="text-gray-600">
+                                <a
+                                    href='https://www.linkedin.com/in/ngtienloc1401/'
+                                    target='_blank'
+                                    rel='noreferrer'
+                                >
+                                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                                    <FaLinkedinIn />
+                                    </div>
+                                </a>
+                            </Tooltip>
+                            <Tooltip content="Github" placement="bottom" className="text-gray-600">
+                                <a
+                                    href='https://github.com/LOCNg0114'
+                                    target='_blank'
+                                    rel='noreferrer'
+                                >
+                                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                                    <FaGithub />
+                                    </div>
+                                </a>
+                            </Tooltip>
+                            <Tooltip content="Email: tienloc1401@gmail.com" placement="bottom" className="text-gray-600">
                             <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                                 <AiOutlineMail />
                             </div>
+                            </Tooltip>
+                            <Tooltip content="Resume" placement="bottom" className="text-gray-600">
                             <Link href='/'>
                                 {/* <a> */}
                                 <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
@@ -67,6 +73,7 @@ const Contact = () => {
                                 </div>
                                 {/* </a> */}
                             </Link>
+                            </Tooltip>
                         </div>
                     </div>
                     </div>

@@ -64,8 +64,34 @@ export const PROJECTS: Project[] = [
         technologies: ['ReactJS', 'Redux toolkit', 'Material UI', 'SwiperJS', 'Formik', 'Yup', 'Express rest api', 'Express validator ', 'JWT' ],
         linkDemo: '',
         linkRepo: 'https://github.com/LOCNg0114/MERN_Movie_Web_2023',
-        experience: 'Evaluating front-end technologies (libraries, dependencies). this improves the performance of the application during use. Reviewing Code & support teammate during work. it makes the code cleaner and conforms to the convention. Working directly with the Product Owner and Design Team to define the product roadmap.',
-        experienceObject: [],
+        experience: '',
+        experienceObject: [
+            {
+                name: '- ReactJS:',
+                content: 'Build a Responsive Movie Website'
+            },
+            {
+                name: '- React router v6',
+                content: 'Implement Routing/Navigation using React Router'
+            },
+            {
+                name: '- Express rest api / Express validator / Jsonwebtoken',
+                content: 'Sign up / Sign in / Get API from Themoviedb'
+            },
+            {
+                name: '- Mongoose',
+                content: 'Save movie to Favorite list (Remove favorite item) / Build API, how to connect to the server'
+            },
+            {
+                name: '- Material UI',
+                content: 'Learn to use Material UI components and icons'
+            },
+            {
+                name: '- Formik / Yup',
+                content: 'Validate form data and response'
+            },
+
+        ],
         showDescription: 'Short description for Movie Website'
     },
     {
@@ -78,33 +104,73 @@ export const PROJECTS: Project[] = [
         linkDemo: 'https://nextjs-blog-app-keuc.vercel.app',
         linkRepo: 'https://github.com/LOCNg0114/Nextjs-Blog-App',
         experience:'',
-        experienceObject: [],
+        experienceObject: [
+            {
+                name: '- NextJS:',
+                content: 'Build and understand how to make blog website using Next.js'
+            },
+            {
+                name: '- SWR:',
+                content: 'Learn the concept and application of SWR into the application to load the data'
+            },
+            {
+                name: '- TailwindCSS:',
+                content: 'Practice with this utility-first framework'
+            },
+        ],
         showDescription: 'Short description for Blog App'
     },
     {
         projectId: 3,
         projectName: 'Netflix Clone',
-        thumbnail: '/assets/projects/netfilix-clone.JPG',
+        thumbnail: '/assets/projects/netflix-clone.JPG',
         mainTech: ['Next.js', 'TypeScript', 'TailwindCSS', 'Material UI', 'Firebase'],
         overview: 'This is a NETFLIX Clone that specializes in Server Side Rendering using Next.js, creating responsive user interfaces through the use of Tailwind CSS, and incorporating Typescript.',
-        technologies: ['Next.js', 'TypeScript', 'TailwindCSS', 'Material UI', 'React Player', 'NextAuth', 'Firebase'],
+        technologies: ['Next.js', 'TypeScript', 'TailwindCSS', 'Material UI Icon', 'React Player', 'NextAuth', 'Firebase'],
         linkDemo: 'https://netflix-clone-locng0114.vercel.app/',
         linkRepo: 'https://github.com/LOCNg0114/netflix-clone',
         experience:'',
-        experienceObject: [],
+        experienceObject: [
+            {
+                name: '- Firebase',
+                content: 'Email/Password Authentication inside of our App using Firebase Auth'
+            },
+            {
+                name: '- Context API',
+                content:'Implement shared state across our entire App using Context'
+            },
+            {
+                name: '- Material UI',
+                content: 'Learn to use Material UI components and icons'
+            },
+            {
+                name: '- TailwindCSS:',
+                content: 'Practice with this utility-first framework'
+            },
+
+        ],
         showDescription:'Short description for Netflix Website Clone'
     },
     {
         projectId: 4,
         projectName: 'Nodemailer Email',
-        thumbnail: '',
+        thumbnail: '/assets/projects/nodemailer.png',
         mainTech: ['ReactJS', 'Express', 'Nodemailer'],
         overview: 'Send Mail with Nodemailer Using Node.js Backend',
         technologies: ['ReactJS', 'Express', 'Nodemailer', 'Nodemon'],
         linkDemo: '',
         linkRepo: 'https://github.com/LOCNg0114/Nodemailer_Gmail',
         experience:'',
-        experienceObject: [],
+        experienceObject: [
+            {
+                name: '- NodeJS',
+                content: 'Learn the concept and application of NodeJS in the project'
+            },
+            {
+                name: '- Nodemailer',
+                content: 'Nodemailer is useful to send mail with SMTP server, learn how to use it to send mail'
+            },
+        ],
         showDescription: 'Short description for Nodemailer Email'
     },
 ]
