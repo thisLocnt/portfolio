@@ -1,7 +1,7 @@
 export const JOB_TITLE = 'Front-End Developer'
 export const FULL_NAME = 'Nguyen Tien Loc'
 
-export const SELF_INTRODUCE = 'I have been working as a Frontend Developer for a year and have experience developing websites and apps, and implementing them on various projects, ranging from small landing pages to big projects.I primarily specialize in utilizing ReactJS and NextJS.'
+export const SELF_INTRODUCE = `I have over 1.5 years of experience in developing websites and apps as a <i>Frontend Developer</i>, and implementing them on various projects, ranging from small landing pages to big projects.<br/> I primarily specialize in utilizing <b>ReactJS</b> and <b>Next.js</b>.`
 
 export interface Skill{
     thumbnail: string;
