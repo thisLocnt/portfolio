@@ -32,8 +32,9 @@ const Contact = () => {
             subject: '',
             message: ''
         },
-        resolver: yupResolver(schema)
+        // resolver: yupResolver(schema)
     })
+    
 
     const onSubmitForm = async (data: ContactInfo) => {
         try {
