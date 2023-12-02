@@ -16,7 +16,7 @@ const Property = ({ project }: PropertyProps) => {
     return (
         <>
             <Head>
-                <title>{FULL_NAME} | {project.projectName}</title>
+                <title>{project.projectName}</title>
                 <meta name="author" content={FULL_NAME} />
                 <meta property="og:title" content={`Nguyen Tien Loc | ${project.projectName}`} />
                 <meta name='description' content={project.showDescription} />
