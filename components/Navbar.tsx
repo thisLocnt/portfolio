@@ -48,9 +48,6 @@ const Navbar = () => {
                         <Link href='/#contact '>
                             <li className="ml-10 text-sm uppercase hover:border-b">Contact</li>
                         </Link>
-                        <Link href='/api/download-cv'>
-                            <li className="ml-10 text-sm uppercase hover:border-b">Download My CV</li>
-                        </Link>
                     </ul>
                     <div className="md:hidden cursor-pointer" onClick={handleNav}>
                         <AiOutlineMenu size={25} />
@@ -95,10 +92,7 @@ const Navbar = () => {
                             </Link>
                             <Link href='/#contact' onClick={() => setNav(false)}>
                                 <li className="py-4 text-sm">Contact</li>
-                            </Link>
-                            <Link href='/api/download-cv'>
-                                <li className="py-4 text-sm">Download My CV</li>
-                            </Link>
+                            </Link>                            
                         </ul>
                         <div className="pt-16">
                             <p className="uppercase tracking-widest text-[#5651e5]">Let's Connect</p>
@@ -121,12 +115,17 @@ const Navbar = () => {
                                         <FaGithub size={25} />
                                     </a>
                                 </div>
-                                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                                <a
+                                    href={`mailto:${process.env.EMAIL}`}
+                                    className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
+                                >
                                     <AiOutlineMail size={25} />
-                                </div>
-                                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                                    <BsFillPersonLinesFill size={25} />
-                                </div>
+                                </a>
+                                <Link href='/api/download-cv'>
+                                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                                        <BsFillPersonLinesFill size={25} />
+                                    </div>
+                                </Link>
                             </div>
                         </div>
                     </div>
