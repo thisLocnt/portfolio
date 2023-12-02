@@ -1,0 +1,57 @@
+$gap-item: 20px;
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap-item;
+}
+
+.item {
+    $gap-per-item: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 12px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: calc(25% - calc($gap-item - $gap-per-item));
+    cursor: pointer;
+    font-size: 1.25rem;
+    padding: 24px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+}
+
+.img {
+    object-fit: contain;
+    width: 64px;
+    height: 64px;
+}
+
+@media screen and (max-width: 992px) {
+    .item {
+        $gap-per-item: 6.66px;
+        width: calc(33.33% - calc($gap-item - $gap-per-item));
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .item {
+        $gap-per-item: 10px;
+        width: calc(50% - calc($gap-item - $gap-per-item));
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .wrapper {
+        gap: 10px;
+    }
+
+    .item {
+        width: 100%;
+        pointer-events: none;
+    }
+}
