@@ -33,6 +33,10 @@ export const SKILLS: Skill[] = [
         thumbnail: '/assets/skills/mysql.png',
         name: 'MySQL'
     },
+    {
+        thumbnail: '/assets/skills/mongoDB.png',
+        name: 'MongoDB'
+    },
 ]
 
 interface ExperienceObject{

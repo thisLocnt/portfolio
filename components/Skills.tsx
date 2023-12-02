@@ -1,7 +1,7 @@
-
 import Image from 'next/image'
 import React from 'react'
 import { SKILLS } from '../utils/constants'
+import skillStyles from 'styles/skill.module.scss'
 
 const Skill = () => {
     return (
@@ -9,7 +9,7 @@ const Skill = () => {
             <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
                 <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Skills</p>
                 <h2 className='py-4 '>What I can do</h2>
-                <div className='flex gap-4 flex-wrap justify-start'>
+                {/* <div className='flex gap-4 flex-wrap justify-start'>
                 {
                     SKILLS.map((skill, index) => (
                         <div 
@@ -32,6 +32,16 @@ const Skill = () => {
                         </div>
                     ))
                 }
+                </div> */}
+                <div className={skillStyles.wrapper}>
+                    {
+                        SKILLS.map((skill, index) => (
+                            <div className={skillStyles.item} key={index}>
+                                <Image className={skillStyles.img} src={skill.thumbnail} alt='/' width='64' height='64' />
+                                <h3 className='text-xl'>{skill.name}</h3>
+                            </div>
+                        ))
+                    }
                 </div>
             </div>
         </div>
