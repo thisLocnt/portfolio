@@ -24,7 +24,7 @@ const schema = yup.object().shape({
 })
 
 const Contact = () => {
-    const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm<ContactInfo>({
+    const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm<Partial<ContactInfo>>({
         defaultValues: {
             name: '',
             phoneNumber: '',
@@ -32,9 +32,8 @@ const Contact = () => {
             subject: '',
             message: ''
         },
-        // resolver: yupResolver(schema)
+        resolver: yupResolver(schema)
     })
-    
 
     const onSubmitForm = async (data: ContactInfo) => {
         try {
