@@ -31,7 +31,7 @@ const Main = () => {
                         <Tooltip content="LinkedIn" placement="top" className="text-gray-600">
                             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
                                 <a
-                                    href='https://www.linkedin.com/in/ngtienloc1401/'
+                                    href={process.env.LINKEDIN_URL}
                                     target='_blank'
                                     rel='noreferrer'
                                 >
@@ -42,7 +42,7 @@ const Main = () => {
                         <Tooltip content="Github" placement="top" className="text-gray-600">
                             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
                                 <a
-                                    href='https://github.com/LOCNg0114'
+                                    href={process.env.GITHUB_URL}
                                     target='_blank'
                                     rel='noreferrer'
                                 >
