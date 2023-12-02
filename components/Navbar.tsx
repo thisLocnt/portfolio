@@ -5,24 +5,24 @@ import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import React, { useEffect, useState } from "react";
 
-const Navbar = () =>{
+const Navbar = () => {
     const [nav, setNav] = useState(false);
     const [shadow, setShadow] = useState(false)
 
-    const handleNav = () =>{
+    const handleNav = () => {
         setNav(pre => !pre)
     }
 
-    useEffect(()=> {
+    useEffect(() => {
         const handleShadow = () => {
-            if(window.screenY >= 90) {
+            if (window.screenY >= 90) {
                 setShadow(true)
             } else {
                 setShadow(false)
             }
         }
         window.addEventListener('scroll', handleShadow)
-    },[])
+    }, [])
 
     return (
         // <div className={shadow ? 'fixed top-0 w-full h-20 shadow-xl z-[100] bg-[#ecf0f3]' :  'fixed top-0 w-full h-20 z-[100]'}>
@@ -66,8 +66,8 @@ const Navbar = () =>{
                     <div>
                         <div className="flex w-full items-center justify-between">
                             <Image src='/assets/avatar.jpg' alt="/" width='50' height='50' />
-                            <div 
-                                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"  
+                            <div
+                                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
                                 onClick={handleNav}
                             >
                                 <AiOutlineClose />
@@ -75,7 +75,7 @@ const Navbar = () =>{
                         </div>
                         <div className="border-b border-gray-300 my-4">
                             <p className="w-[85%] md:w-[90%] py-4">
-                            hanks for spending time with me!
+                                Thanks for spending time with me!
                             </p>
                         </div>
                     </div>
@@ -105,7 +105,7 @@ const Navbar = () =>{
                             <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                                     <a
-                                        href='https://www.linkedin.com/in/ngtienloc1401/'
+                                        href={process.env.LINKEDIN_URL}
                                         target='_blank'
                                         rel='noreferrer'
                                     >
@@ -114,7 +114,7 @@ const Navbar = () =>{
                                 </div>
                                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                                     <a
-                                        href='https://github.com/LOCNg0114'
+                                        href={process.env.GITHUB_URL}
                                         target='_blank'
                                         rel='noreferrer'
                                     >
