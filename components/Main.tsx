@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { JOB_TITLE, FULL_NAME } from "../utils/constants";
 import { Tooltip } from "@material-tailwind/react";
 
-const textArray = ['Front-End Developer', 'Software Engineering'];
+const textArray = ['Front-End Developer', 'Software Engineer'];
 
 const Main = () => {
     const [roleText, setRoleText] = useState('')
