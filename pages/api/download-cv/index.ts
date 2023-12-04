@@ -5,7 +5,7 @@ import { join } from 'path';
 const handler = (req: NextApiRequest, res: NextApiResponse) => {
 
     const onDownloadMyCv = () => {
-        const fileName = 'CV-TienLoc.pdf'
+        const fileName = 'TienLoc-CV.pdf'
         const filePath = join(process.cwd(), 'public/assets', fileName);
         res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document');
         res.setHeader('Content-Disposition', `attachment; filename=${fileName}`);
