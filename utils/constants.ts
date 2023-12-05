@@ -161,7 +161,7 @@ export const PROJECTS: Project[] = [
         mainTech: ['ReactJS', 'Mongoose', 'Material UI',],
         overview: 'Fullstack Responsive React.js Movie Website with MERN stack and Themoviedb. Some features of this project: \n\r - Sign up / Sign in \n\r - Save movie to Favorite list (Remove favorite item)\n\r- Write review for movie (Delete review) \n\r- Search movies / tv series / people \n\r- Light / Dark theme',
         technologies: ['ReactJS', 'Redux toolkit', 'Material UI', 'SwiperJS', 'Formik', 'Yup', 'Express rest api', 'Express validator ', 'JWT'],
-        linkDemo: '',
+        linkDemo: 'https://mern-movie-web-2023-rtrp.vercel.app/',
         linkRepo: 'https://github.com/LOCNg0114/MERN_Movie_Web_2023',
         experience: '',
         experienceObject: [
