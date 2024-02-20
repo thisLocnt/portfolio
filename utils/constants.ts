@@ -80,7 +80,7 @@ export const PROJECTS: Project[] = [
             },
             {
                 name: '- React Suite, Sass',
-                content: `Implements UI for the question input, the web version of the exam, and the mobile student's exam game`
+                content: `Implements UI for the question input, the web version of the exam.`
             },
             {
                 name: '- Excel js',
@@ -103,6 +103,32 @@ export const PROJECTS: Project[] = [
     },
     {
         projectId: 2,
+        projectName: 'i-Test4u',
+        thumbnail: '/assets/projects/iTest4u-01.png',
+        mainTech: ['Next.js', 'Javascript', 'NextAuth', 'React Suite', 'MySQL',],
+        overview: 'i-Test4u provides training on an online platform specifically for students. Its goal is to improve the experience of self-study and self-review',
+        technologies: ['Next.js', 'TypeScript', 'NextAuth', 'React Suite', 'Sass', 'MySQL', 'Prisma', '...'],
+        linkDemo: 'https://i-test4u.vn/',
+        linkRepo: '',
+        experience: '',
+        experienceObject: [
+            {
+                name: '- Next Auth',
+                content: 'Manage users and permissions, and decentralize authority between student and visitors'
+            },
+            {
+                name: '- React Suite, Sass',
+                content: `Implements UI for the practice test UI, and the mobile student's exam game`
+            },
+            {
+                name: '- MySQL, Prisma',
+                content: 'Manage data entry database, store question sets, exam questions, save scores, and student information after taking the test '
+            },
+        ],
+        showDescription: 'Short description for i-Test4u'
+    },
+    {
+        projectId: 3,
         projectName: 'Animation Dashboard',
         thumbnail: '/assets/projects/dashboard-animation.png',
         mainTech: ['React.js', 'React Chart JS', 'Material UI'],
@@ -124,7 +150,7 @@ export const PROJECTS: Project[] = [
         showDescription: 'Short description for Animation Dashboard'
     },
     {
-        projectId: 3,
+        projectId: 4,
         projectName: 'Netflix Clone',
         thumbnail: '/assets/projects/netflix-clone.JPG',
         mainTech: ['Next.js', 'TypeScript', 'TailwindCSS', 'Material UI', 'Firebase'],
@@ -155,7 +181,7 @@ export const PROJECTS: Project[] = [
         showDescription: 'Short description for Netflix Website Clone'
     },
     {
-        projectId: 4,
+        projectId: 5,
         projectName: 'MERN Movie Website',
         thumbnail: '/assets/projects/reactjs-movie-website.JPG',
         mainTech: ['ReactJS', 'Mongoose', 'Material UI',],
@@ -194,7 +220,7 @@ export const PROJECTS: Project[] = [
         showDescription: 'Short description for Movie Website'
     },
     {
-        projectId: 5,
+        projectId: 6,
         projectName: 'Next.js Blog App',
         thumbnail: '/assets/projects/blog-app.jpg',
         mainTech: ['Next.js', 'TypeScript', 'TailwindCSS'],
@@ -220,7 +246,7 @@ export const PROJECTS: Project[] = [
         showDescription: 'Short description for Blog App'
     },
     {
-        projectId: 6,
+        projectId: 7,
         projectName: 'Nodemailer Email',
         thumbnail: '/assets/projects/nodemailer.png',
         mainTech: ['ReactJS', 'Express', 'Nodemailer'],
